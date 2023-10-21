@@ -1,3 +1,23 @@
+.create {
+    width: 90%;
+    margin: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.botao {
+    text-align: right;
+}
+
+.botao button {
+    width: 20%;
+    margin: 1rem auto;
+}
+
+.create h1 {
+    font-size: 2rem;
+}
+
 .container {
     width: 90%;
     margin: 2%;

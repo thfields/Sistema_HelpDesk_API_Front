@@ -3,3 +3,7 @@ mat-card {
     height: 50%;
     margin: 1rem auto 0 auto;
 }
+
+mat-card-title {
+    color: rgb(105, 240, 174);
+}
