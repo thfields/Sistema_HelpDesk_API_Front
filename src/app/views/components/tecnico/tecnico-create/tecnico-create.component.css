@@ -1,6 +1,7 @@
 .form {
     width: 40%;
     margin: auto;
+    padding: 4rem 2rem;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
 
 .full-width {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .button-container {
@@ -27,5 +29,8 @@ h1 {
   
   .cancelar {
     margin-left: auto; /* Empurrar o botão Cancelar para o outro extremo */
-  }
-  
+}
+
+#test {
+  color: rgb(105, 240, 174);
+}
