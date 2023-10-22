@@ -1,0 +1,39 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-width {
+    width: 100%;
+}
+
+textarea {
+    min-height: 20rem;
+    max-height: 25rem;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ocupar toda a largura disponível */
+  }
+  
+  .criar, .cancelar {
+    flex: 1; /* Crescer igualmente para ocupar o espaço disponível */
+    max-width: 48%; /* Limitar a largura máxima de cada botão para evitar que eles fiquem muito largos */
+    height: 3rem;
+  }
+  
+  .cancelar {
+    margin-left: auto; /* Empurrar o botão Cancelar para o outro extremo */
+}
+
+#test {
+  color: rgb(105, 240, 174);
+}
