@@ -1,0 +1,46 @@
+.create {
+    width: 90%;
+    margin: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.botao {
+    text-align: right;
+}
+
+.botao button {
+    width: 20%;
+    margin: 1rem auto;
+}
+
+.create h1 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 90%;
+    margin: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#edit {
+    color: rgb(105, 240, 174);
+}
+
+#delete {
+    color: rgba(28, 25, 211, 0.966);
+}
+
+td.baixa {
+    color: rgb(0, 255, 0);
+}
+
+td.media {
+    color: rgb(255, 255, 0)
+}
+
+td.alta {
+    color: rgb(255, 0, 0);
+}
