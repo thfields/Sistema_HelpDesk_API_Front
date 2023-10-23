@@ -3,21 +3,21 @@
     <div class="labels">
         <mat-form-field>
             <mat-label>Selecione um técnico</mat-label>
-            <mat-select [(value)]="selected">
-              <mat-option *ngFor="let tec of tecnicos" value="tec.id">{{ tec.nome }}</mat-option>
+            <mat-select [(value)]="os.tecnico">
+              <mat-option *ngFor="let tec of tecnicos" value="{{ tec.id }}">{{ tec.nome }}</mat-option>
             </mat-select>
         </mat-form-field>
 
         <mat-form-field>
             <mat-label>Selecione um cliente</mat-label>
-            <mat-select [(value)]="selected">
-              <mat-option *ngFor="let cli of clientes" value="cli.id">{{ cli.nome }}</mat-option>
+            <mat-select [(value)]="os.cliente">
+              <mat-option *ngFor="let cli of clientes" value="{{ cli.id }}">{{ cli.nome }}</mat-option>
             </mat-select>
         </mat-form-field>
 
         <mat-form-field>
             <mat-label>Selecione um status</mat-label>
-            <mat-select [(value)]="selected">
+            <mat-select [(value)]="os.status">
                 <mat-option value="0">ABERTO</mat-option>
                 <mat-option value="1">EM ANDAMENTO</mat-option>
                 <mat-option value="2">ENCERRADO</mat-option>
@@ -26,7 +26,7 @@
 
         <mat-form-field>
             <mat-label>Selecione uma prioridade</mat-label>
-            <mat-select [(value)]="prioridade">
+            <mat-select [(value)]="os.prioridade">
                 <mat-option value="0">BAIXA</mat-option>
                 <mat-option value="1">MEDIA</mat-option>
                 <mat-option value="2">ALTA</mat-option>
@@ -40,15 +40,15 @@
 
         <mat-form-field class="full-width">
           <mat-label>Adicione as observações</mat-label>
-          <textarea matInput maxlength="255"></textarea>
+          <textarea [(ngModel)]="os.observacoes" name="observacoes" matInput maxlength="255"></textarea>
         </mat-form-field>
       </form>
       
 
       <div class="button-container mat-elevation-z8">
-        <button 
+        <button (click)="create()"
             mat-stroked-button class="criar" color="accent">Criar</button>
-        <button  mat-stroked-button class="cancelar" color="warn">Cancelar</button>
+        <button mat-stroked-button class="cancelar" color="warn">Cancelar</button>
     </div>
     
 </div>
