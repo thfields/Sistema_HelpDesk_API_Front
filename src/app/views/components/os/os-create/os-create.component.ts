@@ -46,7 +46,10 @@ export class OsCreateComponent  implements OnInit{
       this.service.message("Ordem de Serviço criada com sucesso!");
       this.router.navigate(['os'])
     })
+  }
 
+  cancel(): void{
+    this.router.navigate(['os'])
   }
 
   listarTecnicos():void{
