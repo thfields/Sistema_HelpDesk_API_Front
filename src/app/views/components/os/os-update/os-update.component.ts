@@ -54,8 +54,13 @@ export class OsUpdateComponent implements OnInit {
     });
   }
 
-  cancel(): void {
-    this.router.navigate(["os"]);
+  return(): void {
+    if(this.os.status == "2"){
+      this.router.navigate(['os', 'closed'])
+    }else{
+      this.router.navigate(['os'])
+    }
+    
   }
 
   listarTecnicos(): void {
